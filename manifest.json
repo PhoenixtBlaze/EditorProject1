@@ -1,0 +1,14 @@
+{
+  "assets": [],
+  "baseUrl": "/EditorProject1/",
+  "bundle": "runtime.js",
+  "project": {
+    "id": "project_1af00d99-da96-4111-9d9e-f9ca28c8e081",
+    "name": "Untitled Project",
+    "runtimeVersion": "0.1.0",
+    "startupSceneId": "scene_89e6cef0-e978-47f5-863e-fe12007425b1"
+  },
+  "project_json": "project.json",
+  "qualityProfile": "auto",
+  "version": 1
+}

@@ -1,0 +1,339 @@
+{
+  "id": "project_1af00d99-da96-4111-9d9e-f9ca28c8e081",
+  "name": "Untitled Project",
+  "runtimeVersion": "0.1.0",
+  "scenes": [
+    {
+      "id": "scene_89e6cef0-e978-47f5-863e-fe12007425b1",
+      "name": "Main",
+      "settings": {
+        "background": "#0b0e12",
+        "clearColor": true,
+        "clearDepth": true
+      },
+      "actors": [
+        {
+          "id": "actor_3083c50c-562f-484b-8bdf-43eef1aef39b",
+          "name": "Environment",
+          "components": [
+            {
+              "type": "TransformComponent",
+              "props": {
+                "_version": 1,
+                "position": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation": [
+                  0,
+                  0,
+                  0
+                ],
+                "scale": [
+                  1,
+                  1,
+                  1
+                ]
+              }
+            },
+            {
+              "type": "EnvironmentComponent",
+              "props": {
+                "_version": 1,
+                "backgroundMode": "color",
+                "backgroundColor": [
+                  0.045,
+                  0.055,
+                  0.07
+                ],
+                "useHdriAsEnvironment": true,
+                "hdriBlurriness": 0,
+                "fog": {
+                  "enabled": true,
+                  "color": [
+                    0.045,
+                    0.055,
+                    0.07
+                  ],
+                  "near": 8,
+                  "far": 40
+                },
+                "exposure": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "actor_2929cac6-5c7c-4622-b7f9-2b95c61a98c4",
+          "name": "Main Camera",
+          "components": [
+            {
+              "type": "TransformComponent",
+              "props": {
+                "_version": 1,
+                "position": [
+                  4,
+                  2.5,
+                  5
+                ],
+                "rotation": [
+                  -0.4,
+                  0.6,
+                  0
+                ],
+                "scale": [
+                  1,
+                  1,
+                  1
+                ]
+              }
+            },
+            {
+              "type": "CameraComponent",
+              "props": {
+                "_version": 1,
+                "projection": "perspective",
+                "fov": 55,
+                "orthoSize": 5,
+                "near": 0.1,
+                "far": 200,
+                "isMain": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "actor_e44282a4-8d3f-4b83-9dcf-bb5625e517a3",
+          "name": "Sun",
+          "components": [
+            {
+              "type": "TransformComponent",
+              "props": {
+                "_version": 1,
+                "position": [
+                  5,
+                  8,
+                  4
+                ],
+                "rotation": [
+                  0,
+                  0,
+                  0
+                ],
+                "scale": [
+                  1,
+                  1,
+                  1
+                ]
+              }
+            },
+            {
+              "type": "LightComponent",
+              "props": {
+                "_version": 1,
+                "kind": "directional",
+                "color": [
+                  1,
+                  0.95,
+                  0.85
+                ],
+                "skyColor": [
+                  0.5,
+                  0.7,
+                  1
+                ],
+                "intensity": 2.2,
+                "distance": 0,
+                "angle": 0.5235987755982988,
+                "penumbra": 0.1,
+                "decay": 2,
+                "castShadow": false
+              }
+            }
+          ]
+        },
+        {
+          "id": "actor_2fbd21e1-378b-4a25-a451-8c8a654f69f1",
+          "name": "Ambient",
+          "components": [
+            {
+              "type": "TransformComponent",
+              "props": {
+                "_version": 1,
+                "position": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation": [
+                  0,
+                  0,
+                  0
+                ],
+                "scale": [
+                  1,
+                  1,
+                  1
+                ]
+              }
+            },
+            {
+              "type": "LightComponent",
+              "props": {
+                "_version": 1,
+                "kind": "ambient",
+                "color": [
+                  0.6,
+                  0.7,
+                  1
+                ],
+                "skyColor": [
+                  0.5,
+                  0.7,
+                  1
+                ],
+                "intensity": 0.35,
+                "distance": 0,
+                "angle": 0.5235987755982988,
+                "penumbra": 0.1,
+                "decay": 2,
+                "castShadow": false
+              }
+            }
+          ]
+        },
+        {
+          "id": "actor_2e6b4485-8b36-4eab-9a0f-23eb31666a2d",
+          "name": "Ground",
+          "components": [
+            {
+              "type": "TransformComponent",
+              "props": {
+                "_version": 1,
+                "position": [
+                  0,
+                  -0.5,
+                  0
+                ],
+                "rotation": [
+                  -1.5707963267948966,
+                  0,
+                  0
+                ],
+                "scale": [
+                  20,
+                  20,
+                  1
+                ]
+              }
+            },
+            {
+              "type": "MeshRendererComponent",
+              "props": {
+                "_version": 1,
+                "shape": "plane",
+                "color": [
+                  0.1,
+                  0.12,
+                  0.16
+                ],
+                "metalness": 0,
+                "roughness": 0.95,
+                "size": 1,
+                "castShadow": false,
+                "receiveShadow": false
+              }
+            }
+          ]
+        },
+        {
+          "id": "actor_0f953f81-3cdc-4535-aa5a-760ee41fe683",
+          "name": "Cube",
+          "components": [
+            {
+              "type": "TransformComponent",
+              "props": {
+                "_version": 1,
+                "position": [
+                  0,
+                  0.5,
+                  0
+                ],
+                "rotation": [
+                  0,
+                  0,
+                  0
+                ],
+                "scale": [
+                  1,
+                  1,
+                  1
+                ]
+              }
+            },
+            {
+              "type": "MeshRendererComponent",
+              "props": {
+                "_version": 1,
+                "shape": "box",
+                "color": [
+                  1,
+                  0.5,
+                  0.18
+                ],
+                "metalness": 0.15,
+                "roughness": 0.4,
+                "size": 1,
+                "castShadow": false,
+                "receiveShadow": false
+              }
+            },
+            {
+              "type": "AnimationPlayerComponent",
+              "props": {
+                "_version": 1,
+                "playbackMode": "loop",
+                "playbackRate": 1,
+                "autoplay": false,
+                "weight": 1,
+                "layer": 0,
+                "additive": false
+              }
+            }
+          ]
+        }
+      ],
+      "_version": 1
+    }
+  ],
+  "startupSceneId": "scene_89e6cef0-e978-47f5-863e-fe12007425b1",
+  "assets": [],
+  "folders": [
+    {
+      "path": "/Scenes"
+    },
+    {
+      "path": "/Meshes"
+    },
+    {
+      "path": "/Textures"
+    },
+    {
+      "path": "/Materials"
+    },
+    {
+      "path": "/Audio"
+    },
+    {
+      "path": "/Fonts"
+    },
+    {
+      "path": "/Prefabs"
+    },
+    {
+      "path": "/Animations"
+    }
+  ],
+  "_version": 2
+}
